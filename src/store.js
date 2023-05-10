@@ -3,6 +3,9 @@ import { reactive } from "vue";
 export const store = reactive(
     {
         testoRicerca: '',
-        arrayDati: []
+        arrayFilm: [],
+        apiKey: '697c85f36243aecef552ab548222820c',
+        arraySerieTv: [],
+        pathImages: 'https://image.tmdb.org/t/p/w342/'
     }
 )

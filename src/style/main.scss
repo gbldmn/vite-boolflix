@@ -4,8 +4,46 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    background-color: rgb(105, 98, 98);
+}
+.contenitore {
+    height: 100vh;
+}
 
 button {
     color: white;
     background-color: beige;
+}
+header {
+    background-color: black;
+    h1 {
+        color: red;
+    }
+}
+.car {
+    height: 40px;
+}
+.card-body {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    display: none;
+}
+.card-body:hover {
+    display: block;
+}
+img {
+    cursor: pointer;
+}
+.containert {
+    width: 100%;
+    background-color: black;
+}
+.rot {
+    width: 80%;
+     display: flex;
+    margin: 0 auto;
+     justify-content: space-between;
+    align-items: center;
 }
