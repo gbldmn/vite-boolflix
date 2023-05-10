@@ -37,6 +37,7 @@ export default {
                     this.store.arrayFilm = datiApi
                     console.log(datiApi)
                 })
+
             },
 
             // chiamataApi() {
@@ -48,7 +49,7 @@ export default {
 </script>
 
 <template>
- <div class="contenitore">
+
   <header class="containert p-3 d-flex justify-content-between aligh-items-center">
       <div class="rot">
            <h1 class="" > boolflix </h1>
@@ -59,7 +60,7 @@ export default {
 
    <AreaFilm/>
   </main>
- </div>
+
 </template>
 
 <style lang="scss">

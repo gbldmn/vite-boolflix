@@ -16,11 +16,11 @@ export default {
 </script>
 
 <template>
-     <!-- <div class="row">
+    <div class="row">
         <SingolaCard v-for="(elem, index) in store.arraySerieTv"
         :key="index"
         :infoSerieTv="elem" />
-    </div>  -->
+    </div>  
 
 </template>
 

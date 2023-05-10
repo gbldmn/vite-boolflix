@@ -6,14 +6,16 @@
 }
 body {
     background-color: rgb(105, 98, 98);
-}
-.contenitore {
     height: 100vh;
+    overflow: scroll;
 }
+
 
 button {
     color: white;
-    background-color: beige;
+    background-color: red;
+    border: 2px solid red;
+    width: 50px;
 }
 header {
     background-color: black;
@@ -29,9 +31,15 @@ header {
     width: 100%;
     cursor: pointer;
     display: none;
+    color: black;
+    background-color: white;
+    opacity: 0.7;
 }
-.card-body:hover {
-    display: block;
+.card:hover {
+  
+    .card-body {
+       display: block;
+    }
 }
 img {
     cursor: pointer;

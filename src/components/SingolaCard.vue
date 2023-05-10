@@ -18,7 +18,7 @@ export default {
      <div class="col-3">
         <div class="card position-relative mb-2">
              <img :src="store.pathImages + infoFilm.poster_path" class="card-img-top" alt="...">
-            <div class="card-body position-absolute bg-white  ">
+            <div class="card-body position-absolute bg-white 2 ">
              <h5 class="card-title"> {{ infoFilm.title }} </h5>
              <p class="">{{ infoFilm.original_title }}</p>
              <p>{{ infoFilm.title }}</p>
@@ -28,7 +28,7 @@ export default {
         </div>
 
     </div>
-     <!-- <div class="col-3">
+      <!-- <div class="col-3">
         <div class="card">
              <img src="" class="card-img-top" alt="...">
             <div class="card-body">
@@ -40,5 +40,5 @@ export default {
             </div>
         </div>
 
-    </div>  -->
+    </div>   -->
 </template>
