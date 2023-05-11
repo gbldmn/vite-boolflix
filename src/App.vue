@@ -33,16 +33,11 @@ export default {
                 .then((res)=> {
                     // console.log(res.data)
 
-                   const datiApi = res.data.results
-                    this.store.arrayFilm = datiApi
-                    console.log(datiApi)
+                    console.log(res.data.results)
+                    store.arrayFilm = res.data.results
                 })
 
             },
-
-            // chiamataApi() {
-
-            // }
         }
 }
 

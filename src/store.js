@@ -6,6 +6,5 @@ export const store = reactive(
         arrayFilm: [],
         apiKey: '697c85f36243aecef552ab548222820c',
         arraySerieTv: [],
-        pathImages: 'https://image.tmdb.org/t/p/w342/'
     }
 )

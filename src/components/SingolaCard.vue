@@ -1,29 +1,47 @@
 <script>
-import { store } from '../store'
-export default {
+ import { store } from '../store'
+ export default {
     name: 'SingolaCard',
     props: {
-        infoFilm: Object,
-        // infoSerieTv: Object
+        info: Object
     },
+     methods: {
+         bandiereStampate(x) {
+             x = x.toUpperCase();
+
+             if( x == 'EN'){
+                 x = 'GB'
+                 return `https://flagsapi.com/${x}/shiny/64.png`
+             } else {
+                 return `https://flagsapi.com/${x}/shiny/64.png`
+                }
+         },
+         title(){
+            if(this.info.original_title){
+                return this.info.original_title
+            } else {
+                return this.info.original_name
+            }
+         }
+     },
     data(){
         return{
             store
         }
     }
-}
+ }
 </script>
 
 <template>
      <div class="col-3">
         <div class="card position-relative mb-2">
-             <img :src="store.pathImages + infoFilm.poster_path" class="card-img-top" alt="...">
+             <img :src= "`https://image.tmdb.org/t/p/w342/${info.poster_path}`" class="card-img-top" alt="">
             <div class="card-body position-absolute bg-white 2 ">
-             <h5 class="card-title"> {{ infoFilm.title }} </h5>
-             <p class="">{{ infoFilm.original_title }}</p>
-             <p>{{ infoFilm.title }}</p>
-             <p>{{ infoFilm.original_language}}</p>
-             <p>{{ infoFilm.vote_average }} <i class="fa-regular fa-star" style="color: #000000;"></i> </p>
+             <h5 class="card-title"> {{ title() }} </h5>
+             <p class="">{{ info.original_title }}</p>
+             <p>{{ info.title }}</p>
+             <p>{{ info.original_language}} <img width="20" :src="bandiereStampate(info.original_language)" alt=""> </p>
+             <p>{{ info.vote_average }} <i class="fa-regular fa-star" style="color: #000000;"></i> </p>
             </div>
         </div>
 
