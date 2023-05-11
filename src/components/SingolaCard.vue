@@ -49,7 +49,7 @@
             <div class="card-body position-absolute bg-white 2 ">
              <h5 class="card-title"> {{ title() }} </h5>
              <p class="">{{ info.original_title }}</p>
-             <p>{{ info.title }}</p>
+             <p>{{ info.overview }}</p>
              <p>{{ info.original_language}} <img width="20" :src="bandiereStampate(info.original_language)" alt=""> </p>
              <p> voto: {{ votoStelline() }} <i v-for="n in 5" class="fa-star" :class=" ( n <= votoStelline() ) ? 'fa-solid' : 'fa-regular' " ></i> </p>
             </div>

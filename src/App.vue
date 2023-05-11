@@ -47,7 +47,14 @@ export default {
 
   <header class="containert p-3 d-flex justify-content-between aligh-items-center">
       <div class="rot">
-           <h1 class="" > boolflix </h1>
+        <div>
+           <h1 class="d-inline-block" > boolflix </h1>
+           <ul class="d-inline-block">
+            <li class="d-inline-block"> <a href="">menù</a></li>
+            <li class="d-inline-block"> <a href="">original</a></li>
+            <li class="d-inline-block"> <a href="">lista preferiti</a></li>
+           </ul>
+        </div>
            <SearchComp @nomeEmit="chiamateApi()"/>
       </div>
   </header>
